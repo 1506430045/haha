@@ -5,7 +5,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Clue\\Library\\": "Library"
+      "Library\\": "Library",
+      "Script\\": "Script"
     }
   }
 }
