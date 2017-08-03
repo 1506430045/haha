@@ -6,12 +6,16 @@
  * Date: 17/7/31
  * Time: 下午3:12
  */
-namespace Script\Demo;
+
+define('SCRIPT_BASE_DIR', __DIR__ . '/../..');
+
+require_once SCRIPT_BASE_DIR . '/vendor/autoload.php';
 
 class Test extends \Script\ScriptBase
 {
     public function __construct()
     {
+        parent::__construct();
     }
 
     public function run()

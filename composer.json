@@ -6,7 +6,10 @@
   "autoload": {
     "psr-4": {
       "Library\\": "Library",
-      "Script\\": "Script"
+      "Script\\": "Script",
+      "Model\\": "Model",
+      "Config\\": "Config",
+      "Api\\": "Api"
     }
   }
 }

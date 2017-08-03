@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInit6e696b784949573e2c6c01991cdf6fbc
 {
     public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Script\\' => 7,
+        ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
@@ -14,14 +18,27 @@ class ComposerStaticInit6e696b784949573e2c6c01991cdf6fbc
         'M' => 
         array (
             'Monolog\\' => 8,
+            'Model\\' => 6,
         ),
         'L' => 
         array (
             'Library\\' => 8,
         ),
+        'C' => 
+        array (
+            'Config\\' => 7,
+        ),
+        'A' => 
+        array (
+            'Api\\' => 4,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Script\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Script',
+        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
@@ -30,9 +47,21 @@ class ComposerStaticInit6e696b784949573e2c6c01991cdf6fbc
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'Model\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Model',
+        ),
         'Library\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Library',
+        ),
+        'Config\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Config',
+        ),
+        'Api\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Api',
         ),
     );
 
