@@ -2,43 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44e0e757-e24a-4375-a542-33823a183476" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/AbstractFactory.php" afterPath="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/AbstractFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/Config.php" afterPath="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/Config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/FirstFactory.php" afterPath="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/FirstFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/FirstProduct.php" afterPath="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/FirstProduct.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/Product.php" afterPath="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/Product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/SecondFactory.php" afterPath="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/SecondFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/SecondProduct.php" afterPath="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/SecondProduct.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Creation/Factory/Factory.php" afterPath="$PROJECT_DIR$/DesignPatten/Creation/Factory/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Creation/Factory/FirstFactory.php" afterPath="$PROJECT_DIR$/DesignPatten/Creation/Factory/FirstFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Creation/Factory/FirstProduct.php" afterPath="$PROJECT_DIR$/DesignPatten/Creation/Factory/FirstProduct.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Creation/Factory/Product.php" afterPath="$PROJECT_DIR$/DesignPatten/Creation/Factory/Product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Creation/Factory/SecondFactory.php" afterPath="$PROJECT_DIR$/DesignPatten/Creation/Factory/SecondFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Creation/Factory/SecondProduct.php" afterPath="$PROJECT_DIR$/DesignPatten/Creation/Factory/SecondProduct.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Creation/Registry/Package.php" afterPath="$PROJECT_DIR$/DesignPatten/Creation/Registry/Package.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Creation/Singleton/Product.php" afterPath="$PROJECT_DIR$/DesignPatten/Creation/Singleton/Product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/Es/Demo.php" afterPath="$PROJECT_DIR$/Library/Es/Demo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/Es/ElasticSearch.php" afterPath="$PROJECT_DIR$/Library/Es/ElasticSearch.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Md/redis-transaction.md" afterPath="$PROJECT_DIR$/Md/redis-transaction.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Redis/BaseModel.php" afterPath="$PROJECT_DIR$/Model/Redis/BaseModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Redis/CounterModel.php" afterPath="$PROJECT_DIR$/Model/Redis/CounterModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Redis/LockModel.php" afterPath="$PROJECT_DIR$/Model/Redis/LockModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Redis/LogModel.php" afterPath="$PROJECT_DIR$/Model/Redis/LogModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Redis/SnsModel.php" afterPath="$PROJECT_DIR$/Model/Redis/SnsModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Redis/TestModel.php" afterPath="$PROJECT_DIR$/Model/Redis/TestModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Script/Demo/Test.php" afterPath="$PROJECT_DIR$/Script/Demo/Test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Script/Lua/accesss_limit.lua" afterPath="$PROJECT_DIR$/Script/Lua/accesss_limit.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Script/Lua/hello.lua" afterPath="$PROJECT_DIR$/Script/Lua/hello.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Script/Lua/main.lua" afterPath="$PROJECT_DIR$/Script/Lua/main.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Script/Lua/module.lua" afterPath="$PROJECT_DIR$/Script/Lua/module.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Script/Lua/red_packet.lua" afterPath="$PROJECT_DIR$/Script/Lua/red_packet.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Script/Lua/string.lua" afterPath="$PROJECT_DIR$/Script/Lua/string.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/index.php" afterPath="$PROJECT_DIR$/Public/index.php" />
     </list>
     <ignored path="haha.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,6 +34,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Public/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SecondFactory.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/SecondFactory.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -81,11 +56,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FirstFactory.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FirstFactory.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/FirstFactory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="119">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FirstProduct.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/FirstProduct.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -149,7 +134,6 @@
         <option value="$PROJECT_DIR$/DesignPatten/Creation/Factory/FirstFactory.php" />
         <option value="$PROJECT_DIR$/DesignPatten/Creation/Factory/SecondFactory.php" />
         <option value="$PROJECT_DIR$/DesignPatten/Creation/Factory/Factory.php" />
-        <option value="$PROJECT_DIR$/Public/index.php" />
         <option value="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/AcstractFactory.php" />
         <option value="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/AbstractFactory.php" />
         <option value="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/Config.php" />
@@ -158,6 +142,7 @@
         <option value="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/FirstFactory.php" />
         <option value="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/SecondProduct.php" />
         <option value="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/SecondFactory.php" />
+        <option value="$PROJECT_DIR$/Public/index.php" />
       </list>
     </option>
   </component>
@@ -455,16 +440,16 @@
       <workItem from="1505876565747" duration="984000" />
       <workItem from="1505877881449" duration="623000" />
       <workItem from="1509363476637" duration="2756000" />
-      <workItem from="1509863245839" duration="5787000" />
+      <workItem from="1509863245839" duration="5847000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75156000" />
+    <option name="totallyTimeSpent" value="75216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1466" height="721" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16058905" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -473,7 +458,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41956884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41956884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -800,14 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DesignPatten/Creation/Factory/Factory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -828,14 +805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/FirstProduct.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -888,8 +857,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/FirstFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        <state relative-caret-position="119">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/FirstProduct.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
           <folding />
         </state>
       </provider>
