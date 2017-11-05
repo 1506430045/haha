@@ -24,6 +24,10 @@ class ComposerStaticInit6e696b784949573e2c6c01991cdf6fbc
         array (
             'Library\\' => 8,
         ),
+        'D' => 
+        array (
+            'DesignPatten\\' => 13,
+        ),
         'C' => 
         array (
             'Config\\' => 7,
@@ -55,6 +59,10 @@ class ComposerStaticInit6e696b784949573e2c6c01991cdf6fbc
         array (
             0 => __DIR__ . '/../..' . '/Library',
         ),
+        'DesignPatten\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/DesignPatten',
+        ),
         'Config\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Config',
@@ -71,6 +79,13 @@ class ComposerStaticInit6e696b784949573e2c6c01991cdf6fbc
             'Kafka\\' => 
             array (
                 0 => __DIR__ . '/..' . '/nmred/kafka-php/src',
+            ),
+        ),
+        'E' => 
+        array (
+            'ElasticSearch' => 
+            array (
+                0 => __DIR__ . '/..' . '/nervetattoo/elasticsearch/src',
             ),
         ),
     );

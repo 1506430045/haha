@@ -6,7 +6,9 @@
  * Date: 17/11/5
  * Time: 下午4:05
  */
-class Product
-{
+namespace DesignPatten\Creation\Factory;
 
+interface Product
+{
+    public function getName();
 }

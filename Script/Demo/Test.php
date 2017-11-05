@@ -20,7 +20,8 @@ class Test extends \Script\ScriptBase
 
     public function run()
     {
-        echo 'hello world';
+        $data = (new \Model\Redis\CounterModel())->clearCounters();
+        var_dump($data);
     }
 }
 

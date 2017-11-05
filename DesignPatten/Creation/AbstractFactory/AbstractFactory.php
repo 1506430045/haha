@@ -6,10 +6,10 @@
  * Time: 下午4:15
  */
 
-namespace DesignPatten\Creation\Factory;
+namespace DesignPatten\Creation\AbstractFactory;
 
 
-abstract class AcstractFactory
+abstract class AbstractFactory
 {
     public static function getFactory()
     {

@@ -6,10 +6,13 @@
  * Time: 下午4:18
  */
 
-namespace DesignPatten\Creation\Factory;
+namespace DesignPatten\Creation\AbstractFactory;
 
 
-class FirstProduct
+class FirstProduct implements Product
 {
-
+    public function getName()
+    {
+        return "The product from the first factory";
+    }
 }

@@ -6,10 +6,13 @@
  * Time: 下午4:17
  */
 
-namespace DesignPatten\Creation\Factory;
+namespace DesignPatten\Creation\AbstractFactory;
 
 
-class FirstFactory
+class FirstFactory extends AbstractFactory
 {
-
+    public function getProduct()
+    {
+        return new FirstProduct();
+    }
 }

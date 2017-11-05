@@ -6,3 +6,14 @@
 -- To change this template use File | Settings | File Templates.
 --
 
+local foo = {}
+
+local function getName()
+    return "tom"
+end
+
+function foo.greeting()
+    print("hello " .. getName())
+end
+
+return foo

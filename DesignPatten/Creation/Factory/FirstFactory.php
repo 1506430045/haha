@@ -9,7 +9,10 @@
 namespace DesignPatten\Creation\Factory;
 
 
-class FirstFactory
+class FirstFactory implements Factory
 {
-
+    public function getProduct()
+    {
+        return new FirstProduct();
+    }
 }

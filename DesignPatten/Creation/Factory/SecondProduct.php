@@ -9,7 +9,10 @@
 namespace DesignPatten\Creation\Factory;
 
 
-class SecondProduct
+class SecondProduct implements Product
 {
-
+    public function getName()
+    {
+        return "The Second Name";
+    }
 }

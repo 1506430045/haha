@@ -9,7 +9,10 @@
 namespace DesignPatten\Creation\AbstractFactory;
 
 
-class SecondFactory
+class SecondFactory extends AbstractFactory
 {
-
+    public function getProduct()
+    {
+        return new SecondProduct();
+    }
 }

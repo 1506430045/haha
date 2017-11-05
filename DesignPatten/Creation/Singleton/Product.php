@@ -6,7 +6,7 @@
  * Date: 17/10/30
  * Time: 下午8:12
  */
-namespace DesignPatten\Creation;
+namespace DesignPatten\Creation\Singleton;
 
 class Product
 {

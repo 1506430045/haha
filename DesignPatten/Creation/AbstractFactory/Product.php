@@ -6,10 +6,10 @@
  * Time: 下午4:14
  */
 
-namespace DesignPatten\Creation\Factory;
+namespace DesignPatten\Creation\AbstractFactory;
 
 
-class Product
+interface Product
 {
-
+    public function getName();
 }

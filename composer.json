@@ -1,7 +1,8 @@
 {
   "require": {
     "nmred/kafka-php": "^0.1.5",
-    "monolog/monolog": "1.9.*"
+    "monolog/monolog": "1.9.*",
+    "nervetattoo/elasticsearch": ">=2.0"
   },
   "autoload": {
     "psr-4": {
@@ -9,7 +10,8 @@
       "Script\\": "Script",
       "Model\\": "Model",
       "Config\\": "Config",
-      "Api\\": "Api"
+      "Api\\": "Api",
+      "DesignPatten\\": "DesignPatten"
     }
   }
 }

@@ -23,9 +23,13 @@ class BaseModel
      */
     private function __construct(array $config)
     {
-        $this->redis = new Redis();
-        $this->redis->connect($config['host'], $config['port'], $config['time_out']);
-        $this->redis->auth($config['auth']);
+        try {
+            $this->redis = new Redis();
+            $this->redis->connect($config['host'], $config['port'], $config['time_out']);
+            $this->redis->auth($config['auth']);
+        } catch (\RedisException $e) {
+            exit($e->getMessage());
+        }
     }
 
     /**

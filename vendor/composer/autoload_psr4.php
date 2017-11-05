@@ -11,6 +11,7 @@ return array(
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'Model\\' => array($baseDir . '/Model'),
     'Library\\' => array($baseDir . '/Library'),
+    'DesignPatten\\' => array($baseDir . '/DesignPatten'),
     'Config\\' => array($baseDir . '/Config'),
     'Api\\' => array($baseDir . '/Api'),
 );
