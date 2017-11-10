@@ -3,9 +3,10 @@
 define('ROOT_DIR', __DIR__ . '/..');
 require_once ROOT_DIR . '/vendor/autoload.php';
 
-$factory = new \DesignPatten\Creation\Factory\FirstFactory();
-$firstProductName = $factory->getProduct()->getName();
-$factory = new \DesignPatten\Creation\Factory\SecondFactory();
-$secondProductName = $factory->getProduct()->getName();
+$firstDirector = new DesignPatten\Creation\Builder\Factory(new \DesignPatten\Creation\Builder\FirstBuilder());
 
-var_dump($firstProductName, $secondProductName);
+echo $firstDirector->getProduct()->getName();
+
+$secondDirector = new DesignPatten\Creation\Builder\Factory(new \DesignPatten\Creation\Builder\SecondBuilder());
+
+echo $secondDirector->getProduct()->getName();

@@ -15,6 +15,12 @@ abstract class AbstractFactory
     {
         switch (Config::$factory) {
             case Config::FACTORY_ONE:
+                return new FirstFactory();
+            case Config::FACTORY_TWO:
+                return new SecondFactory();
         }
+        throw new \Exception("Bad Config");
     }
+
+    abstract public function getProduct();
 }
