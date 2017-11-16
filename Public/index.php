@@ -3,10 +3,10 @@
 define('ROOT_DIR', __DIR__ . '/..');
 require_once ROOT_DIR . '/vendor/autoload.php';
 
-$firstDirector = new DesignPatten\Creation\Builder\Factory(new \DesignPatten\Creation\Builder\FirstBuilder());
+use \DesignPatten\Behavioral\Chain;
 
-echo $firstDirector->getProduct()->getName();
-
-$secondDirector = new DesignPatten\Creation\Builder\Factory(new \DesignPatten\Creation\Builder\SecondBuilder());
-
-echo $secondDirector->getProduct()->getName();
+$cc = new Chain\CommandChain();
+$cc->addCommand(new Chain\CustCommand());
+$cc->addCommand(new Chain\MailCommand());
+$cc->runCommand('addCustomer', null);
+$cc->runCommand('mail', null);
