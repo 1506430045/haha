@@ -10,7 +10,7 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://files.phpcomposer.com/files/weiboad/kafka-php/d00128534032521a6d7cef29d636a9ce03f57198.zip",
+            "url": "https://api.github.com/repos/weiboad/kafka-php/zipball/d00128534032521a6d7cef29d636a9ce03f57198",
             "reference": "d00128534032521a6d7cef29d636a9ce03f57198",
             "shasum": ""
         },
@@ -52,7 +52,7 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://files.phpcomposer.com/files/php-fig/log/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d.zip",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
             "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
             "shasum": ""
         },
@@ -101,7 +101,7 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://files.phpcomposer.com/files/Seldaek/monolog/65026b610f8c19e61d7242f600530677b0466aac.zip",
+            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/65026b610f8c19e61d7242f600530677b0466aac",
             "reference": "65026b610f8c19e61d7242f600530677b0466aac",
             "shasum": ""
         },
@@ -171,7 +171,7 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://files.phpcomposer.com/files/nervetattoo/elasticsearch/6215e036b2e7940514d211828b852ad4118bb329.zip",
+            "url": "https://api.github.com/repos/nervetattoo/elasticsearch/zipball/6215e036b2e7940514d211828b852ad4118bb329",
             "reference": "6215e036b2e7940514d211828b852ad4118bb329",
             "shasum": ""
         },

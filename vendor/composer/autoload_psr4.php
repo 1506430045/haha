@@ -14,4 +14,5 @@ return array(
     'DesignPatten\\' => array($baseDir . '/DesignPatten'),
     'Config\\' => array($baseDir . '/Config'),
     'Api\\' => array($baseDir . '/Api'),
+    'Algorithm\\' => array($baseDir . '/Algorithm'),
 );

@@ -20,8 +20,14 @@ class Test extends \Script\ScriptBase
 
     public function run()
     {
-        $data = (new \Model\Redis\CounterModel())->clearCounters();
-        var_dump($data);
+        $arr = [
+            2, 1, 6, 11, 7, 76
+        ];
+
+
+        $config = Config\RedisConfig::$defaultConfig;
+        (new Algorihtm\Sort\Demo())->test();
+        var_dump($config);
     }
 }
 

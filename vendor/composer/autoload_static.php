@@ -35,6 +35,7 @@ class ComposerStaticInit6e696b784949573e2c6c01991cdf6fbc
         'A' => 
         array (
             'Api\\' => 4,
+            'Algorithm\\' => 10,
         ),
     );
 
@@ -70,6 +71,10 @@ class ComposerStaticInit6e696b784949573e2c6c01991cdf6fbc
         'Api\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Api',
+        ),
+        'Algorithm\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Algorithm',
         ),
     );
 
