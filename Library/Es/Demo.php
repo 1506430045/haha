@@ -30,7 +30,7 @@ class Demo
             )
         ));
 
-        $results = $esw
+        $results = $es
             ->setIndex(array("one", "two"))
             ->setType(array("mytype", "other-type"))
             ->search('title:cool');

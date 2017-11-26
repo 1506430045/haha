@@ -20,14 +20,12 @@ class Test extends \Script\ScriptBase
 
     public function run()
     {
-        $arr = [
-            2, 1, 6, 11, 7, 76
-        ];
+        $arr = range(1, 1000);
+        shuffle($arr);
 
+        $arr = (new Algorithm\Sort\Sort(new Algorithm\Sort\InsertSort(), $arr))->sort();
+        var_dump($arr);
 
-        $config = Config\RedisConfig::$defaultConfig;
-        (new Algorihtm\Sort\Demo())->test();
-        var_dump($config);
     }
 }
 

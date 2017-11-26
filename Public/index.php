@@ -9,4 +9,6 @@ $arr = [
     2, 1, 6, 11, 7, 76
 ];
 
-(new Algorihtm\Sort\Sort(new Algorihtm\Sort\BubbleSort($arr)))->sort();
+
+$arr = (new Algorithm\Sort\Sort(new Algorithm\Sort\BubbleSort(), $arr))->sort();
+var_dump($arr);

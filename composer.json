@@ -11,7 +11,8 @@
       "Model\\": "Model",
       "Config\\": "Config",
       "Api\\": "Api",
-      "DesignPatten\\": "DesignPatten"
+      "DesignPatten\\": "DesignPatten",
+      "Algorithm\\": "Algorithm"
     }
   }
 }
