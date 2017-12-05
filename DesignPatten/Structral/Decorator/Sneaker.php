@@ -8,8 +8,17 @@
 
 namespace DesignPatten\Structral\Decorator;
 
-
-class Sneaker
+/**
+ * 运动鞋
+ *
+ * Class Sneaker
+ * @package DesignPatten\Structral\Decorator
+ */
+class Sneaker extends Clothes
 {
-
+    public function display()
+    {
+        echo "运动鞋 ";
+        parent::display();
+    }
 }

@@ -3,10 +3,22 @@
 define('ROOT_DIR', __DIR__ . '/..');
 require_once ROOT_DIR . '/vendor/autoload.php';
 
-use \DesignPatten\Behavioral\Chain;
+use \DesignPatten\Structral\Decorator;
 
-$cc = new Chain\CommandChain();
-$cc->addCommand(new Chain\CustCommand());
-$cc->addCommand(new Chain\MailCommand());
-$cc->runCommand('addCustomer', null);
-$cc->runCommand('mail', null);
+$zhangsan = new Decorator\Person('zhangshan');
+$lisi = new Decorator\Person('lisi');
+
+$sneaker = new Decorator\Sneaker();
+$coat = new Decorator\Coat();
+
+//$coat->display();
+
+$trousers = new Decorator\Trousers();   //裤子
+$tshirt   = new Decorator\TShirt();
+
+$trousers->decorate($lisi);
+$tshirt->decorate($trousers);
+$coat->decorate($tshirt);
+
+$coat->display();
+

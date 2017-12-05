@@ -8,8 +8,17 @@
 
 namespace DesignPatten\Structral\Decorator;
 
-
-class TRousers
+/**
+ * 裤子
+ *
+ * Class Trousers
+ * @package DesignPatten\Structral\Decorator
+ */
+class Trousers extends Clothes
 {
-
+    public function display()
+    {
+        echo "裤子 ";
+        parent::display();
+    }
 }

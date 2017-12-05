@@ -11,5 +11,10 @@ namespace Config;
 
 class MysqlConfig
 {
-
+    public static $defaultConfig = [
+        'localhost' => '127.0.0.1',
+        'host' => 'root',
+        'password' => '',
+        'port' => '3306'
+    ];
 }

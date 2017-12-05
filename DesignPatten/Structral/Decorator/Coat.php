@@ -8,8 +8,17 @@
 
 namespace DesignPatten\Structral\Decorator;
 
-
-class Coat
+/**
+ * 外套
+ *
+ * Class Coat
+ * @package DesignPatten\Structral\Decorator
+ */
+class Coat extends Clothes
 {
-
+    public function display()
+    {
+        echo "外套 ";
+        parent::display();
+    }
 }

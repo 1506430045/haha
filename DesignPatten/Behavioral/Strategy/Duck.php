@@ -11,5 +11,15 @@ namespace DesignPatten\Behavioral\Strategy;
 
 class Duck
 {
+    private $_flyBehavior;
 
+    public function setFlyBehavior(FlyBehavior $behavior)
+    {
+        $this->_flyBehavior = $behavior;
+    }
+
+    public function performFly()
+    {
+        $this->_flyBehavior->fly();
+    }
 }

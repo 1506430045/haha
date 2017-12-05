@@ -20,8 +20,7 @@ class Test extends \Script\ScriptBase
 
     public function run()
     {
-        $data = (new \Model\Redis\CounterModel())->clearCounters();
-        var_dump($data);
+        (new \Model\Mongo\DemoModel)->test();
     }
 }
 
