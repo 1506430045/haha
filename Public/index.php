@@ -1,14 +1,24 @@
 <?php
 //https://segmentfault.com/a/1190000003817321#articleHeader2
-declare(strict_types=1);    //开启严格模式
-
 define('ROOT_DIR', __DIR__ . '/..');
 require_once ROOT_DIR . '/vendor/autoload.php';
 
-$arr = [
-    2, 1, 6, 11, 7, 76
-];
+use \DesignPatten\Structral\Decorator;
 
+$zhangsan = new Decorator\Person('zhangshan');
+$lisi = new Decorator\Person('lisi');
 
-$arr = (new Algorithm\Sort\Sort(new Algorithm\Sort\BubbleSort(), $arr))->sort();
-var_dump($arr);
+$sneaker = new Decorator\Sneaker();
+$coat = new Decorator\Coat();
+
+//$coat->display();
+
+$trousers = new Decorator\Trousers();   //裤子
+$tshirt   = new Decorator\TShirt();
+
+$trousers->decorate($lisi);
+$tshirt->decorate($trousers);
+$coat->decorate($tshirt);
+
+$coat->display();
+

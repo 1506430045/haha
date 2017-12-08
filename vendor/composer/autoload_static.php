@@ -6,9 +6,14 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit6e696b784949573e2c6c01991cdf6fbc
 {
+    public static $files = array (
+        '3a37ebac017bc098e9a86b35401e7a68' => __DIR__ . '/..' . '/mongodb/mongodb/src/functions.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'S' => 
         array (
+            'Swoole\\' => 7,
             'Script\\' => 7,
         ),
         'P' => 
@@ -18,6 +23,7 @@ class ComposerStaticInit6e696b784949573e2c6c01991cdf6fbc
         'M' => 
         array (
             'Monolog\\' => 8,
+            'MongoDB\\' => 8,
             'Model\\' => 6,
         ),
         'L' => 
@@ -40,6 +46,10 @@ class ComposerStaticInit6e696b784949573e2c6c01991cdf6fbc
     );
 
     public static $prefixDirsPsr4 = array (
+        'Swoole\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/eaglewu/swoole-ide-helper/src',
+        ),
         'Script\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Script',
@@ -51,6 +61,10 @@ class ComposerStaticInit6e696b784949573e2c6c01991cdf6fbc
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'MongoDB\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mongodb/mongodb/src',
         ),
         'Model\\' => 
         array (

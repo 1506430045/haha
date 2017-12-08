@@ -2,7 +2,8 @@
   "require": {
     "nmred/kafka-php": "^0.1.5",
     "monolog/monolog": "1.9.*",
-    "nervetattoo/elasticsearch": ">=2.0"
+    "nervetattoo/elasticsearch": ">=2.0",
+    "mongodb/mongodb": "^1.0.0@beta"
   },
   "autoload": {
     "psr-4": {
@@ -14,5 +15,8 @@
       "DesignPatten\\": "DesignPatten",
       "Algorithm\\": "Algorithm"
     }
+  },
+  "require-dev": {
+    "eaglewu/swoole-ide-helper": "dev-master"
   }
 }
