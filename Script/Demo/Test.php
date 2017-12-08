@@ -23,7 +23,7 @@ class Test extends \Script\ScriptBase
         $arr = range(1, 1000);
         shuffle($arr);
 
-        $arr = (new Algorithm\Sort\Sort(new Algorithm\Sort\InsertSort(), $arr))->sort();
+        $arr = (new Algorithm\Sort\Sort(new Algorithm\Sort\MergeSort(), $arr))->sort();
         var_dump($arr);
 
     }

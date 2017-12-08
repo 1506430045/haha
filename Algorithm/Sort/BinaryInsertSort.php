@@ -14,6 +14,7 @@ class BinaryInsertSort implements BaseSort
 {
     public function run($arr, $count): array
     {
+
         return [];
     }
 }
