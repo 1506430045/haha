@@ -7,6 +7,7 @@ namespace Composer\Autoload;
 class ComposerStaticInit6e696b784949573e2c6c01991cdf6fbc
 {
     public static $files = array (
+        'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
         '3a37ebac017bc098e9a86b35401e7a68' => __DIR__ . '/..' . '/mongodb/mongodb/src/functions.php',
     );
 
@@ -15,6 +16,10 @@ class ComposerStaticInit6e696b784949573e2c6c01991cdf6fbc
         array (
             'Swoole\\' => 7,
             'Script\\' => 7,
+        ),
+        'R' => 
+        array (
+            'React\\Promise\\' => 14,
         ),
         'P' => 
         array (
@@ -29,6 +34,15 @@ class ComposerStaticInit6e696b784949573e2c6c01991cdf6fbc
         'L' => 
         array (
             'Library\\' => 8,
+        ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Stream\\' => 18,
+            'GuzzleHttp\\Ring\\' => 16,
+        ),
+        'E' => 
+        array (
+            'Elasticsearch\\' => 14,
         ),
         'D' => 
         array (
@@ -54,6 +68,10 @@ class ComposerStaticInit6e696b784949573e2c6c01991cdf6fbc
         array (
             0 => __DIR__ . '/../..' . '/Script',
         ),
+        'React\\Promise\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/react/promise/src',
+        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
@@ -73,6 +91,18 @@ class ComposerStaticInit6e696b784949573e2c6c01991cdf6fbc
         'Library\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Library',
+        ),
+        'GuzzleHttp\\Stream\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/streams/src',
+        ),
+        'GuzzleHttp\\Ring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/ringphp/src',
+        ),
+        'Elasticsearch\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/elasticsearch/elasticsearch/src/Elasticsearch',
         ),
         'DesignPatten\\' => 
         array (

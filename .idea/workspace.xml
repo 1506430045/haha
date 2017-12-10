@@ -2,29 +2,454 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44e0e757-e24a-4375-a542-33823a183476" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/Mongo/BaseModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/Mongo/DemoModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/Es/BaseModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/Es/EmployeeModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Script/Demo/EsDemo.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/.static/.mongodb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/images/save-flowchart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBClient-method-construct-driverOptions.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBClient-method-construct-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBClient-method-dropDatabase-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBClient-method-dropDatabase-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBClient-method-get-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBClient-method-listDatabases-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBClient-method-listDatabases-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBClient-method-selectCollection-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBClient-method-selectCollection-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBClient-method-selectDatabase-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBClient-method-selectDatabase-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-common-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-common-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-aggregate-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-aggregate-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-bulkWrite-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-bulkWrite-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-construct-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-construct-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-count-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-count-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-createIndex-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-createIndex-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-createIndexes-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-createIndexes-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-deleteMany-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-deleteMany-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-deleteOne-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-deleteOne-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-distinct-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-distinct-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-drop-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-drop-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-dropIndex-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-dropIndex-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-dropIndexes-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-dropIndexes-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-find-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-find-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-findOne-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-findOne-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-findOneAndDelete-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-findOneAndDelete-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-findOneAndReplace-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-findOneAndReplace-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-findOneAndUpdate-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-findOneAndUpdate-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-insertMany-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-insertMany-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-insertOne-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-insertOne-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-listIndexes-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-listIndexes-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-mapReduce-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-mapReduce-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-replaceOne-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-replaceOne-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-updateMany-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-updateMany-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-updateOne-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-updateOne-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-withOptions-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBCollection-method-withOptions-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-common-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-method-command-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-method-command-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-method-construct-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-method-construct-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-method-createCollection-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-method-createCollection-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-method-drop-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-method-drop-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-method-dropCollection-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-method-dropCollection-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-method-get-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-method-listCollections-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-method-listCollections-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-method-selectCollection-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-method-selectCollection-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-method-selectGridFSBucket-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-method-selectGridFSBucket-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-method-withOptions-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBDatabase-method-withOptions-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-common-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-common-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-method-construct-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-method-construct-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-method-delete-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-method-downloadToStream-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-method-downloadToStreamByName-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-method-downloadToStreamByName-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-method-find-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-method-findOne-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-method-getFileDocumentForStream-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-method-getFileIdForStream-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-method-openDownloadStream-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-method-openDownloadStreamByName-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-method-openDownloadStreamByName-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-method-openUploadStream-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-method-openUploadStream-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-method-rename-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-method-uploadFromStream-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-MongoDBGridFSBucket-method-uploadFromStream-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-common-option.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/apiargs-common-param.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/extracts-bulkwriteexception.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/extracts-error.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/includes/extracts-note.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/index.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/pretty.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/bson.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/class/MongoDBClient.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/class/MongoDBCollection.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/class/MongoDBDatabase.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/class/MongoDBGridFSBucket.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/enumeration-classes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/exception-classes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBBulkWriteResult-getDeletedCount.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBBulkWriteResult-getInsertedCount.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBBulkWriteResult-getInsertedIds.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBBulkWriteResult-getMatchedCount.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBBulkWriteResult-getModifiedCount.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBBulkWriteResult-getUpsertedCount.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBBulkWriteResult-getUpsertedIds.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBBulkWriteResult-isAcknowledged.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBClient-dropDatabase.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBClient-getManager.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBClient-getReadConcern.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBClient-getReadPreference.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBClient-getTypeMap.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBClient-getWriteConcern.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBClient-listDatabases.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBClient-selectCollection.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBClient-selectDatabase.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBClient__construct.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBClient__get.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-aggregate.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-bulkWrite.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-count.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-createIndex.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-createIndexes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-deleteMany.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-deleteOne.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-distinct.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-drop.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-dropIndex.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-dropIndexes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-find.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-findOne.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-findOneAndDelete.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-findOneAndReplace.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-findOneAndUpdate.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-getCollectionName.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-getDatabaseName.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-getManager.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-getNamespace.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-getReadConcern.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-getReadPreference.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-getTypeMap.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-getWriteConcern.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-insertMany.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-insertOne.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-listIndexes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-mapReduce.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-replaceOne.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-updateMany.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-updateOne.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection-withOptions.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBCollection__construct.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBDatabase-command.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBDatabase-createCollection.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBDatabase-drop.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBDatabase-dropCollection.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBDatabase-getDatabaseName.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBDatabase-getManager.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBDatabase-getReadConcern.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBDatabase-getReadPreference.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBDatabase-getTypeMap.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBDatabase-getWriteConcern.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBDatabase-listCollections.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBDatabase-selectCollection.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBDatabase-selectGridFSBucket.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBDatabase-withOptions.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBDatabase__construct.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBDatabase__get.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBDeleteResult-getDeletedCount.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBDeleteResult-isAcknowledged.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-delete.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-downloadToStream.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-downloadToStreamByName.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-drop.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-find.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-findOne.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-getBucketName.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-getChunkSizeBytes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-getChunksCollection.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-getDatabaseName.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-getFileDocumentForStream.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-getFileIdForStream.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-getFilesCollection.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-getReadConcern.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-getReadPreference.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-getTypeMap.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-getWriteConcern.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-openDownloadStream.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-openDownloadStreamByName.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-openUploadStream.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-rename.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket-uploadFromStream.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBGridFSBucket__construct.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBInsertManyResult-getInsertedCount.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBInsertManyResult-getInsertedIds.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBInsertManyResult-isAcknowledged.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBInsertOneResult-getInsertedCount.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBInsertOneResult-getInsertedId.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBInsertOneResult-isAcknowledged.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBModelCollectionInfo-getCappedMax.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBModelCollectionInfo-getCappedSize.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBModelCollectionInfo-getName.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBModelCollectionInfo-getOptions.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBModelCollectionInfo-isCapped.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBModelDatabaseInfo-getName.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBModelDatabaseInfo-getSizeOnDisk.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBModelDatabaseInfo-isEmpty.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBModelIndexInfo-getKey.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBModelIndexInfo-getName.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBModelIndexInfo-getNamespace.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBModelIndexInfo-getVersion.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBModelIndexInfo-isSparse.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBModelIndexInfo-isTtl.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBModelIndexInfo-isUnique.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBUpdateResult-getMatchedCount.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBUpdateResult-getModifiedCount.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBUpdateResult-getUpsertedCount.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBUpdateResult-getUpsertedId.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/method/MongoDBUpdateResult-isAcknowledged.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/reference/write-result-classes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/tutorial.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/tutorial/collation.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/tutorial/commands.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/tutorial/crud.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/tutorial/decimal128.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/tutorial/example-data.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/tutorial/gridfs.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/tutorial/indexes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/tutorial/install-php-library.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/docs/upgrade.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/phpunit.xml.dist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/BulkWriteResult.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Client.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Collection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Database.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/DeleteResult.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Exception/BadMethodCallException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Exception/Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Exception/InvalidArgumentException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Exception/RuntimeException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Exception/UnexpectedValueException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Exception/UnsupportedException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/GridFS/Bucket.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/GridFS/CollectionWrapper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/GridFS/Exception/CorruptFileException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/GridFS/Exception/FileNotFoundException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/GridFS/ReadableStream.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/GridFS/StreamWrapper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/GridFS/WritableStream.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/InsertManyResult.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/InsertOneResult.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/MapReduceResult.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Model/BSONArray.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Model/BSONDocument.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Model/CachingIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Model/CollectionInfo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Model/CollectionInfoCommandIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Model/CollectionInfoIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Model/CollectionInfoLegacyIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Model/DatabaseInfo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Model/DatabaseInfoIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Model/DatabaseInfoLegacyIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Model/IndexInfo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Model/IndexInfoIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Model/IndexInfoIteratorIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Model/IndexInput.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Model/TypeMapArrayIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/Aggregate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/BulkWrite.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/Count.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/CreateCollection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/CreateIndexes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/DatabaseCommand.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/Delete.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/DeleteMany.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/DeleteOne.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/Distinct.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/DropCollection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/DropDatabase.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/DropIndexes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/Executable.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/Find.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/FindAndModify.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/FindOne.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/FindOneAndDelete.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/FindOneAndReplace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/FindOneAndUpdate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/InsertMany.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/InsertOne.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/ListCollections.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/ListDatabases.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/ListIndexes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/MapReduce.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/ReplaceOne.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/Update.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/UpdateMany.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/UpdateOne.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/UpdateResult.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/src/functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/ClientFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/ClientTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/CollectionFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/CrudSpecFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/FunctionalTestCase.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/read/aggregate-collation.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/read/aggregate-out.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/read/aggregate.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/read/count-collation.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/read/count.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/read/distinct-collation.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/read/distinct.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/read/find-collation.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/read/find.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/deleteMany-collation.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/deleteMany.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/deleteOne-collation.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/deleteOne.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/findOneAndDelete-collation.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/findOneAndDelete.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/findOneAndReplace-collation.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/findOneAndReplace-upsert.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/findOneAndReplace-upsert_pre_2.6.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/findOneAndReplace.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/findOneAndUpdate-collation.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/findOneAndUpdate.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/insertMany.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/insertOne.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/replaceOne-collation.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/replaceOne-pre_2.6.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/replaceOne-upsert.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/replaceOne.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/updateMany-collation.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/updateMany-pre_2.6.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/updateMany.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/updateOne-collation.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/updateOne-pre_2.6.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Collection/spec-tests/write/updateOne.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/CommandObserver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Database/CollectionManagementFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Database/DatabaseFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Database/FunctionalTestCase.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/DocumentationExamplesTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/FooTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/FunctionalTestCase.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/FunctionsTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/GridFS/BucketFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/GridFS/FunctionalTestCase.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/GridFS/ReadableStreamFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/GridFS/SpecFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/GridFS/StreamWrapperFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/GridFS/WritableStreamFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/GridFS/spec-tests/delete.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/GridFS/spec-tests/download.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/GridFS/spec-tests/download_by_name.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/GridFS/spec-tests/upload.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Model/BSONArrayTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Model/BSONDocumentTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Model/CachingIteratorTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Model/CollectionInfoTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Model/DatabaseInfoTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Model/IndexInfoTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Model/IndexInputTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Model/TypeMapArrayIteratorTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/AggregateFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/AggregateTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/BulkWriteFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/BulkWriteTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/CountFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/CountTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/CreateCollectionFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/CreateCollectionTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/CreateIndexesFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/CreateIndexesTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/DatabaseCommandTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/DeleteFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/DeleteTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/DistinctFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/DistinctTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/DropCollectionFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/DropCollectionTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/DropDatabaseFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/DropDatabaseTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/DropIndexesFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/DropIndexesTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/FindAndModifyFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/FindAndModifyTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/FindFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/FindOneAndDeleteTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/FindOneAndReplaceTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/FindOneAndUpdateTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/FindOneFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/FindTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/FunctionalTestCase.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/InsertManyFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/InsertManyTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/InsertOneFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/InsertOneTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/ListCollectionsFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/ListDatabasesTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/ListIndexesFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/ListIndexesTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/MapReduceFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/MapReduceTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/ReplaceOneTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/TestCase.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/UpdateFunctionalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/UpdateManyTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/UpdateOneTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/Operation/UpdateTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/PedantryTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/TestCase.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mongodb/mongodb/tests/bootstrap.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/MysqlConfig.php" afterPath="$PROJECT_DIR$/Config/MysqlConfig.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Behavioral/Strategy/Duck.php" afterPath="$PROJECT_DIR$/DesignPatten/Behavioral/Strategy/Duck.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Behavioral/Strategy/FlyBehavior.php" afterPath="$PROJECT_DIR$/DesignPatten/Behavioral/Strategy/FlyBehavior.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Behavioral/Strategy/FlyWithNo.php" afterPath="$PROJECT_DIR$/DesignPatten/Behavioral/Strategy/FlyWithNo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Behavioral/Strategy/FlyWithWings.php" afterPath="$PROJECT_DIR$/DesignPatten/Behavioral/Strategy/FlyWithWings.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Structral/Decorator/Clothes.php" afterPath="$PROJECT_DIR$/DesignPatten/Structral/Decorator/Clothes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Structral/Decorator/Coat.php" afterPath="$PROJECT_DIR$/DesignPatten/Structral/Decorator/Coat.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Structral/Decorator/IComponent.php" afterPath="$PROJECT_DIR$/DesignPatten/Structral/Decorator/IComponent.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Structral/Decorator/Person.php" afterPath="$PROJECT_DIR$/DesignPatten/Structral/Decorator/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Structral/Decorator/Sneaker.php" afterPath="$PROJECT_DIR$/DesignPatten/Structral/Decorator/Sneaker.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Structral/Decorator/TRousers.php" afterPath="$PROJECT_DIR$/DesignPatten/Structral/Decorator/TRousers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignPatten/Structral/Decorator/Tshirt.php" afterPath="$PROJECT_DIR$/DesignPatten/Structral/Decorator/Tshirt.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/index.php" afterPath="$PROJECT_DIR$/Public/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Script/Demo/Crawler.php" afterPath="$PROJECT_DIR$/Script/Demo/Crawler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Script/Demo/CrawlerV2.php" afterPath="$PROJECT_DIR$/Script/Demo/CrawlerV2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Script/Demo/Test.php" afterPath="$PROJECT_DIR$/Script/Demo/Test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
     </list>
@@ -41,31 +466,60 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="haha" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="BaseModel.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Model/Mongo/BaseModel.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="761">
-              <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+            <state relative-caret-position="340">
+              <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ElasticSearch.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Library/Es/ElasticSearch.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EsDemo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Script/Demo/EsDemo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseModel.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Model/Es/BaseModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
               <folding>
-                <element signature="e#7#91#0#PHP" expanded="true" />
+                <element signature="e#6#79#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DemoModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/Mongo/DemoModel.php">
+      <file leaf-file-name="EmployeeModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/Es/EmployeeModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+            <state relative-caret-position="884">
+              <caret line="52" column="37" lean-forward="false" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
               <folding>
-                <element signature="e#7#91#0#PHP" expanded="true" />
+                <element signature="e#6#92#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,15 +527,17 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>name</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/FirstFactory.php" />
-        <option value="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/SecondProduct.php" />
-        <option value="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/SecondFactory.php" />
         <option value="$PROJECT_DIR$/DesignPatten/Creation/AbstractFactory/AbstractFactory.php" />
         <option value="$PROJECT_DIR$/DesignPatten/Creation/ObjectPool/Project.php" />
         <option value="$PROJECT_DIR$/DesignPatten/Creation/ObjectPool/Product.php" />
@@ -101,7 +557,6 @@
         <option value="$PROJECT_DIR$/DesignPatten/Structural/Decorator/HtmlTemplate.php" />
         <option value="$PROJECT_DIR$/DesignPatten/Structural/Adapter/SimpleBook.php" />
         <option value="$PROJECT_DIR$/DesignPatten/Structural/Adapter/BookAdapter.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/DesignPatten/Behavioral/Strategy/OutputInterface.php" />
         <option value="$PROJECT_DIR$/DesignPatten/Behavioral/Observer/Observer.php" />
         <option value="$PROJECT_DIR$/DesignPatten/Behavioral/Observer/Observable.php" />
@@ -130,6 +585,10 @@
         <option value="$PROJECT_DIR$/Script/Demo/Test.php" />
         <option value="$PROJECT_DIR$/Model/Mongo/DemoModel.php" />
         <option value="$PROJECT_DIR$/Model/Mongo/BaseModel.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/Model/Es/BaseModel.php" />
+        <option value="$PROJECT_DIR$/Model/Es/EmployeeModel.php" />
+        <option value="$PROJECT_DIR$/Script/Demo/EsDemo.php" />
       </list>
     </option>
   </component>
@@ -151,18 +610,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="721" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -179,11 +628,52 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <expand>
+            <path>
+              <item name="haha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="haha" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="haha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="haha" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="haha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="haha" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Es" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="haha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="haha" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mongo" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="haha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="haha" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="haha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="haha" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Script" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="haha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="haha" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Script" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -193,7 +683,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Users/xiangqian/Downloads/swoole-ide-helper-master/Users/xiangqian/Downloads/php-reflection-code-master" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/xiangqian/Sites/haha/Model/Mongo/DemoModel.php&#10;in&#9;FILE&#9;file:///Users/xiangqian/Sites/haha/Public/index.php&#10;inde&#9;FILE&#9;file:///Users/xiangqian/Sites/haha/Public/index.php&#10;Cra&#9;FILE&#9;file:///Users/xiangqian/Sites/haha/Script/Demo/Crawler.php&#10;ind&#9;FILE&#9;file:///Users/xiangqian/Sites/haha/Public/index.php&#10;JianPush&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="es&#9;FILE&#9;file:///data/www/haha/Library/Es/ElasticSearch.php&#10;in&#9;FILE&#9;file:///Users/xiangqian/Sites/haha/Public/index.php&#10;inde&#9;FILE&#9;file:///Users/xiangqian/Sites/haha/Public/index.php&#10;Cra&#9;FILE&#9;file:///Users/xiangqian/Sites/haha/Script/Demo/Crawler.php&#10;ind&#9;FILE&#9;file:///Users/xiangqian/Sites/haha/Public/index.php&#10;JianPush&#9;null&#9;null" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -201,37 +692,43 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
-    <configuration default="true" type="#com.sylvanaar.idea.Lua.run.LuaConfigurationType" factoryName="Lua Script">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="ALTERNATE_INTERPRETER" value="false" />
-      <envs />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="" />
       <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <method />
-    </configuration>
-    <configuration default="true" type="GoRunFileConfiguration" factoryName="Go Single File">
-      <module name="" />
-      <working_directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <method />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="" />
       <working_directory value="$PROJECT_DIR$" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration default="true" type="GoRunFileConfiguration" factoryName="Go Single File">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -251,13 +748,16 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
+    <configuration default="true" type="#com.sylvanaar.idea.Lua.run.LuaConfigurationType" factoryName="Lua Script">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="ALTERNATE_INTERPRETER" value="false" />
       <envs />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -368,35 +868,43 @@
       <workItem from="1512443263617" duration="1246000" />
       <workItem from="1512450505379" duration="3627000" />
       <workItem from="1512459235129" duration="720000" />
+      <workItem from="1512890025152" duration="8000" />
+      <workItem from="1512890376982" duration="485000" />
+      <workItem from="1512890990577" duration="259000" />
+      <workItem from="1512891278039" duration="2901000" />
+      <workItem from="1512902427206" duration="2000" />
+      <workItem from="1512919837996" duration="16000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102250000" />
+    <option name="totallyTimeSpent" value="110053000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="721" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24032257" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24713467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4991708" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49714285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -416,67 +924,31 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DesignPatten/Behavioral/Strategy/OutputInterface.php" />
-    <entry file="file://$PROJECT_DIR$/DesignPatten/Behavioral/Chain/CustCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesignPatten/Behavioral/Chain/CommandChain.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesignPatten/Behavioral/Chain/MailCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesignPatten/Behavioral/Chain/Command.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesignPatten/Behavioral/Observer/CustomerListLogger.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DesignPatten/Behavioral/Strategy/FlyBehavior.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DesignPatten/Behavioral/Strategy/FlyWithWings.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DesignPatten/Behavioral/Strategy/FlyWithNo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="43" />
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DesignPatten/Behavioral/Strategy/Duck.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -484,184 +956,151 @@
     <entry file="file://$PROJECT_DIR$/DesignPatten/Structral/Adapter/SimpleBook.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="41" />
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DesignPatten/Structral/Decorator/IComponent.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DesignPatten/Structral/Decorator/Coat.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DesignPatten/Structral/Decorator/Sneaker.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DesignPatten/Structral/Decorator/Clothes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DesignPatten/Structral/Decorator/Person.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DesignPatten/Structral/Decorator/Tshirt.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DesignPatten/Structral/Decorator/TRousers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Library/Es/ElasticSearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Library/Mq/Kafka/kafkaMqService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1404">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Library/Mq/Rabbit/RabbitMqService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/Redis/LockModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-129">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/Redis/SnsModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1285">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/Redis/TestModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-826">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controller/BaseController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Config/MysqlConfig.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/Redis/LogModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Config/RedisConfig.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Script/Lua/hello.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Script/Lua/accesss_limit.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/eaglewu/swoole-ide-helper/src/Constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="848" column="9" selection-start-line="848" selection-start-column="9" selection-end-line="848" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/eaglewu/swoole-ide-helper/src/Functionals.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="623" column="21" selection-start-line="623" selection-start-column="21" selection-end-line="623" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/eaglewu/swoole-ide-helper/src/Constants.php" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_3.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/eaglewu/swoole-ide-helper/src/Functionals.php" />
     <entry file="file://$PROJECT_DIR$/Md/redis-transaction.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           </first_editor>
           <second_editor />
         </state>
@@ -670,114 +1109,147 @@
     <entry file="file://$PROJECT_DIR$/Script/Lua/module.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Script/ScriptBase.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Script/Demo/Crawler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
-          <caret line="44" column="26" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="26" />
+          <caret line="44" column="26" lean-forward="false" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Script/Demo/CrawlerV2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
-          <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
+          <caret line="64" column="15" lean-forward="false" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/Redis/CounterModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="534">
-          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Mysql/BaseModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Redis/BaseModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Script/Demo/Test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-107">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="e#7#90#0#PHP" expanded="false" />
-          </folding>
+          <caret line="41" column="28" lean-forward="false" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/mongodb.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="343" column="34" selection-start-line="343" selection-start-column="34" selection-end-line="343" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/mongodb/mongodb/src/Collection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4582">
-          <caret line="526" column="32" selection-start-line="526" selection-start-column="32" selection-end-line="526" selection-end-column="32" />
-          <folding>
-            <element signature="e#627#664#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/Find.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="282" column="28" selection-start-line="282" selection-start-column="28" selection-end-line="282" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/mongodb.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/mongodb/mongodb/src/Operation/Find.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/mongodb/mongodb/src/Collection.php" />
     <entry file="file://$PROJECT_DIR$/Model/Mongo/DemoModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
-          <folding>
-            <element signature="e#7#91#0#PHP" expanded="true" />
-          </folding>
+          <caret line="22" column="56" lean-forward="false" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Mysql/BaseModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Redis/BaseModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/Es/ElasticSearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Script/Demo/Test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/Mongo/BaseModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="761">
-          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+        <state relative-caret-position="51">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nervetattoo/elasticsearch/src/ElasticSearch/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="112" column="37" lean-forward="false" selection-start-line="112" selection-start-column="37" selection-end-line="112" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1772">
+          <caret line="32" column="6" lean-forward="false" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/elasticsearch/elasticsearch/src/Elasticsearch/ClientBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Script/Demo/EsDemo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Es/EmployeeModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="37" lean-forward="false" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
           <folding>
-            <element signature="e#7#91#0#PHP" expanded="true" />
+            <element signature="e#6#92#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Es/BaseModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+          <folding>
+            <element signature="e#6#79#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
