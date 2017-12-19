@@ -1,7 +1,8 @@
 <?php
 
 /**
- * Created by PhpStorm.
+ * Redis单例
+ *
  * User: xiangqian
  * Date: 17/8/3
  * Time: 下午3:40
@@ -36,7 +37,7 @@ class BaseModel
      * 获取实例
      *
      * @param array $config
-     * @return BaseModel|mixed
+     * @return BaseModel
      */
     public static function getInstance(array $config)
     {
@@ -45,7 +46,8 @@ class BaseModel
         if (isset(self::$_instances[$key]) && self::$_instances[$key] instanceof self) {
             return self::$_instances[$key];
         }
-        return new self($config);
+        self::$_instances[$key] = new self($config);
+        return self::$_instances[$key];
     }
 
     /**
