@@ -21,8 +21,8 @@ class ScriptBase
     public function __destruct()
     {
         $this->_end = $this->_getMicroTime();
-        $costTime = $this->_end - $this->_start;
-        echo "脚本总耗时: {$costTime}秒";
+        $costTime = ($this->_end - $this->_start) * 1000;
+        echo "脚本总耗时: {$costTime}ms";
     }
 
     /**

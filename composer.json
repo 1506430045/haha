@@ -3,7 +3,8 @@
     "nmred/kafka-php": "^0.1.5",
     "monolog/monolog": "1.9.*",
     "nervetattoo/elasticsearch": ">=2.0",
-    "mongodb/mongodb": "^1.0.0@beta"
+    "mongodb/mongodb": "^1.0.0@beta",
+    "elasticsearch/elasticsearch": "~5.0"
   },
   "autoload": {
     "psr-4": {
@@ -12,7 +13,8 @@
       "Model\\": "Model",
       "Config\\": "Config",
       "Api\\": "Api",
-      "DesignPatten\\": "DesignPatten"
+      "DesignPatten\\": "DesignPatten",
+      "Algorithm\\": "Algorithm"
     }
   },
   "require-dev": {
