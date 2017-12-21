@@ -20,7 +20,7 @@ class Test extends \Script\ScriptBase
 
     public function run()
     {
-        (new \Model\Mongo\DemoModel)->test();
+
     }
 }
 
